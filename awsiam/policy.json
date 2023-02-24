@@ -16,6 +16,14 @@
                 "imagebuilder:*"
             ],
             "Resource": "*"
+        },
+        {
+            "Effect": "Deny",
+            "Action": [
+                "s3:DeleteBucket",
+                "ec2:TerminateInstances"
+            ],
+            "Resource": "*"
         }
     ]
 }
